@@ -16,8 +16,6 @@ function ToastPlayground() {
 
   function handlePopToast(e) {
     e.preventDefault();
-    console.log("messageInput", messageInput);
-    console.log("toastVariant", toastVariant);
     if (messageInput && toastVariant) {
       addToastTolist({ variant: toastVariant, content: messageInput });
     }

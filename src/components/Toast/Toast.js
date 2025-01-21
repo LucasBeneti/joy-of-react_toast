@@ -32,7 +32,7 @@ function Toast({ variant, timeAlive = 4000, id, children }) {
   }, [timeAlive]);
   return (
     isOpen && (
-      <div className={`${styles.toast} ${styles.notice}`}>
+      <div className={`${styles.toast} ${styles[variant]}`}>
         <div className={styles.iconContainer}>
           <IconComponent size={24} />
         </div>
